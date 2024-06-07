@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hostel Rental App - Project Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+
+        h1 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #333;
+        }
+
+        .content-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Hostel Rental App - Project Document</h1>
+
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#project-overview">Project Overview</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#system-requirements">System Requirements</a></li>
+            <li><a href="#user-roles">User Roles</a></li>
+            <li><a href="#user-stories">User Stories</a></li>
+            <li><a href="#wireframes">Wireframes and Mockups</a></li>
+            <li><a href="#technical-architecture">Technical Architecture</a></li>
+            <li><a href="#security-measures">Security Measures</a></li>
+            <li><a href="#development-timeline">Development Timeline</a></li>
+            <li><a href="#budget-resources">Budget and Resources</a></li>
+            <li><a href="#risk-management">Risk Management</a></li>
+            <li><a href="#appendices">Appendices</a></li>
+        </ul>
+
+        <div id="project-overview" class="content-section">
+            <h2>1. Project Overview</h2>
+            <h3>Project Name:</h3>
+            <p>Student Hostel Rental App</p>
+            <h3>Project Description:</h3>
+            <p>The Student Hostel Rental App is designed to facilitate students in finding and renting hostels outside their educational institution. The app provides a platform where students can search for hostels, make payments (either partial or full), add funds to their accounts, and verify their identity using their school matriculation number or JAMB number. While the primary focus is on school hostels, the app also supports the rental of other types of housing.</p>
+        </div>
+
+        <div id="objectives" class="content-section">
+            <h2>2. Objectives</h2>
+            <ul>
+                <li>Simplify the process of finding and renting student hostels.</li>
+                <li>Provide secure payment options, allowing partial or full payments.</li>
+                <li>Enable students to verify their identity through school matriculation or JAMB numbers.</li>
+                <li>Expand the platform to include other types of housing rentals.</li>
+                <li>Ensure a user-friendly experience with intuitive navigation and accessibility.</li>
+            </ul>
+        </div>
+
+        <div id="features" class="content-section">
+            <h2>3. Features</h2>
+            <ul>
+                <li><strong>Search and Filter:</strong> Students can search for hostels based on location, price, amenities, and availability.</li>
+                <li><strong>Payment Options:</strong> Students can choose to pay the rent in full or in installments.</li>
+                <li><strong>Fund Management:</strong> Students can add funds to their account to facilitate payments.</li>
+                <li><strong>Verification:</strong> Verification through school matriculation number or JAMB number.</li>
+                <li><strong>Booking and Confirmation:</strong> Book hostels and receive confirmation notifications.</li>
+                <li><strong>Review and Rating:</strong> Students can rate and review hostels they have stayed in.</li>
+                <li><strong>Notifications:</strong> Alerts for payment due dates, booking confirmations, and special offers.</li>
+                <li><strong>User Profile:</strong> Manage personal information, booking history, and payment details.</li>
+            </ul>
+        </div>
+
+        <div id="system-requirements" class="content-section">
+            <h2>4. System Requirements</h2>
+            <h3>Mobile Application</h3>
+            <ul>
+                <li><strong>Operating System:</strong> Android and iOS</li>
+                <li><strong>RAM:</strong> Minimum 2GB</li>
+                <li><strong>Storage:</strong> Minimum 50MB free space</li>
+            </ul>
+            <h3>Web Application</h3>
+            <ul>
+                <li><strong>Browser Support:</strong> Latest versions of Chrome, Firefox, Safari, and Edge</li>
+                <li><strong>Responsive Design:</strong> Compatible with desktops, tablets, and smartphones</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+                <li><strong>Server:</strong> Cloud-based (e.g., AWS, Google Cloud)</li>
+                <li><strong>Database:</strong> SQL/NoSQL database for storing user data, hostel listings, and transactions</li>
+                <li><strong>API:</strong> RESTful API for communication between frontend and backend</li>
+            </ul>
+        </div>
+
+        <div id="user-roles" class="content-section">
+            <h2>5. User Roles</h2>
+            <ul>
+                <li><strong>Student:</strong> Can search for hostels, make payments, add funds, and verify identity.</li>
+                <li><strong>Admin:</strong> Manages hostel listings, verifies student identities, handles payments, and monitors app performance.</li>
+                <li><strong>Hostel Owner:</strong> Lists their hostels, manages availability, and views booking requests.</li>
+            </ul>
+        </div>
+
+        <div id="user-stories" class="content-section">
+            <h2>6. User Stories</h2>
+            <h3>As a Student:</h3>
+            <ul>
+                <li>I want to search for available hostels so that I can find a place to stay.</li>
+                <li>I want to make a partial or full payment for the rent so that I can secure my booking.</li>
+                <li>I want to add funds to my account to facilitate future payments.</li>
+                <li>I want to verify my identity using my school matriculation or JAMB number to ensure secure transactions.</li>
+                <li>I want to receive notifications about payment due dates and booking confirmations.</li>
+            </ul>
+            <h3>As an Admin:</h3>
+            <ul>
+                <li>I want to manage hostel listings so that students have accurate information.</li>
+                <li>I want to verify student identities to maintain a secure platform.</li>
+                <li>I want to handle payment transactions to ensure smooth financial operations.</li>
+                <li>I want to monitor app performance to maintain optimal functionality.</li>
+            </ul>
+            <h3>As a Hostel Owner:</h3>
+            <ul>
+                <li>I want to list my hostels so that students can book them.</li>
+                <li>I want to manage the availability of my hostels to avoid overbooking.</li>
+                <li>I want to view booking requests to approve or reject them.</li>
+            </ul>
+        </div>
+
+        <div id="wireframes" class="content-section">
+            <h2>7. Wireframes and Mockups</h2>
+            <p>[Include sketches, wireframes, and high-fidelity mockups here to illustrate the app’s design and layout.]</p>
+        </div>
+
+        <div id="technical-architecture" class="content-section">
+            <h2>8. Technical Architecture</h2>
+            <h3>Frontend:</h3>
+            <ul>
+                <li><strong>Frameworks:</strong> React Native for mobile, React.js for web</li>
+                <li><strong>Languages:</strong> JavaScript, HTML, CSS</li>
+            </ul>
+            <h3>Backend:</h3>
+            <ul>
+                <li><strong>Framework:</strong> Node.js with Express.js</li>
+                <li><strong>Database:</strong> MongoDB for NoSQL or PostgreSQL for SQL</li>
+                <li><strong>Authentication:</strong> JWT (JSON Web Tokens) for secure login</li>
+                <li><strong>Payments:</strong> Integration with payment gateways like Pay
